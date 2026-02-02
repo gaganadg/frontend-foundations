@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid Advanced</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr 1fr;
+            grid-template-rows: 100px 200px 100px;
+            gap: 10px;
+            height: 450px;
+        }
+
+        .item {
+            background-color: tomato;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .header {
+            grid-column: 1 / 4; /* Span all 3 columns */
+        }
+
+        .sidebar {
+            grid-row: 2 / 4; /* Span 2 rows */
+        }
+
+        .content {
+            grid-column: 2 / 4;
+        }
+
+        .footer {
+            grid-column: 1 / 4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Grid Advanced Layout</h1>
+
+    <div class="container">
+        <div class="item header">Header</div>
+        <div class="item sidebar">Sidebar</div>
+        <div class="item content">Main Content</div>
+        <div class="item footer">Footer</div>
+    </div>
+
+</body>
+</html>

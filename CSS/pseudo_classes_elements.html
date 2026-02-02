@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo Classes and Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* 🔹 Pseudo-classes */
+
+        a:hover {
+            color: red;
+        }
+
+        input:focus {
+            border: 2px solid blue;
+            outline: none;
+        }
+
+        li:first-child {
+            color: green;
+        }
+
+        li:last-child {
+            color: purple;
+        }
+
+        li:nth-child(2) {
+            font-weight: bold;
+        }
+
+        /* 🔹 Pseudo-elements */
+
+        p::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        .box::before {
+            content: "🔥 ";
+        }
+
+        .box::after {
+            content: " 🚀";
+        }
+
+        .box {
+            background-color: lightgray;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pseudo Classes & Elements</h1>
+
+    <h2>Hover & Focus</h2>
+    <a href="#">Hover over this link</a><br><br>
+    <input type="text" placeholder="Click here to focus">
+
+    <h2>List Styling</h2>
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Last Item</li>
+    </ul>
+
+    <h2>Pseudo-elements</h2>
+    <p>This paragraph demonstrates first-letter and first-line styling.</p>
+
+    <div class="box">This box has content added using before and after.</div>
+
+</body>
+</html>

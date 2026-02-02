@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transitions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: steelblue;
+            margin: 40px;
+            transition: all 0.5s ease; /* Transition added */
+        }
+
+        .box:hover {
+            background-color: coral;
+            transform: scale(1.2);
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: teal;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: darkcyan;
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Transitions</h1>
+
+    <h2>Hover over the box</h2>
+    <div class="box"></div>
+
+    <h2>Hover over the button</h2>
+    <button class="button">Hover Me</button>
+
+</body>
+</html>

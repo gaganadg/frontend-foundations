@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Basics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;              /* Turns on flexbox */
+            flex-direction: row;        /* Row = horizontal (default) */
+            justify-content: space-around; /* Horizontal spacing */
+            align-items: center;        /* Vertical alignment */
+            height: 200px;
+            background-color: lightgray;
+            border: 2px solid black;
+        }
+
+        .item {
+            background-color: coral;
+            color: white;
+            padding: 20px;
+            font-size: 18px;
+            width: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Flexbox Basics</h1>
+
+    <div class="container">
+        <div class="item">Box 1</div>
+        <div class="item">Box 2</div>
+        <div class="item">Box 3</div>
+    </div>
+
+</body>
+</html>

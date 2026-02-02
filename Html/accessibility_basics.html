@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Accessibility Basics</title>
+</head>
+<body>
+
+    <h1>Accessibility Examples</h1>
+
+    <!--  1. Alt text for images -->
+    <h2>Accessible Image</h2>
+    <img src="https://tse2.mm.bing.net/th/id/OIP.cntypHfBHFCp87lZm-RqxwHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Green mountains with a lake in front">
+
+    <hr>
+
+    <!--  2. Proper Labels for Inputs -->
+    <h2>Accessible Form</h2>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+    </form>
+
+    <hr>
+
+    <!--  3. Button with ARIA label -->
+    <h2>Accessible Button</h2>
+    <button aria-label="Close menu">X</button>
+
+    <hr>
+
+    <!--  4. Proper Heading Order -->
+    <h2>Heading Structure</h2>
+    <h1>Main Title</h1>
+    <h2>Subsection</h2>
+    <h3>Details</h3>
+
+    <hr>
+
+    <!--  5. Link with clear text -->
+    <h2>Descriptive Links</h2>
+    <p>
+         Bad: <a href="#">Click here</a><br>
+         Good: <a href="#">Download HTML notes</a>
+    </p>
+
+</body>
+</html>

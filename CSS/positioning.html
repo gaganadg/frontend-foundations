@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Positioning</title>
+    <style>
+        body {
+            height: 1500px; /* so we can scroll */
+        }
+
+        .box {
+            width: 120px;
+            height: 120px;
+            color: white;
+            text-align: center;
+            line-height: 120px;
+            font-weight: bold;
+        }
+
+        .static {
+            position: static;
+            background-color: gray;
+        }
+
+        .relative {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: blue;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            background-color: red;
+        }
+
+        .fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: green;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: purple;
+        }
+
+        .container {
+            position: relative;
+            border: 2px dashed black;
+            margin: 50px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Positioning Examples</h1>
+
+    <div class="box static">Static</div>
+
+    <div class="box relative">Relative</div>
+
+    <div class="container">
+        <div class="box absolute">Absolute</div>
+    </div>
+
+    <div class="box sticky">Sticky Header</div>
+
+    <div class="box fixed">Fixed</div>
+
+</body>
+</html>
